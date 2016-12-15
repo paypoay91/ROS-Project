@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+  The complete turtlebot library of xacros for easy reference
+ -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- General -->
+  <xacro:include filename="$(find my_project)/urdf/common_properties.urdf.xacro"/>
+  <xacro:include filename="$(find my_project)/urdf/turtlebot_properties.urdf.xacro"/>
+  <!-- Bases -->
+  <xacro:include filename="$(find my_project)/urdf/kobuki.urdf.xacro" />
+  <!-- Stacks -->
+  <xacro:include filename="$(find my_project)/urdf/hexagons.urdf.xacro"/>
+  <!-- 3D Sensors -->
+  <xacro:include filename="$(find my_project)/urdf/asus_xtion_pro.urdf.xacro"/>
+  <!-- 2D Hokuyo Laser -->
+  <xacro:include filename="$(find my_project)/urdf/hokuyo.urdf.xacro"/>
+</robot>
